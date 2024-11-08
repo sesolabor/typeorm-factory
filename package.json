@@ -5,16 +5,12 @@
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "scripts": {
-    "build": "pnpx tsc",
+    "build": "tsc",
     "test": "jest",
     "codecov": "./node_modules/.bin/codecov",
     "lint": "eslint . --ext .ts",
     "format": "prettier --write \"src/**/*.{ts,js}\"",
-    "prepublish": "pnpm install && tsc",
-    "prepublishOnly": "npm run lint",
-    "preversion": "npm run lint",
-    "version": "npm run format && git add -A src",
-    "postversion": "git push && git push --tags"
+    "version": "npm run format && git add -A src"
   },
   "author": "Bogdan Darius",
   "repository": {

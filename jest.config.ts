@@ -6,5 +6,8 @@ module.exports = {
   testMatch: ['**/__tests__/**/*.test.ts'],
   setupFilesAfterEnv: ['./__tests__/setup/jest.setup.ts'],
   coveragePathIgnorePatterns: ['./node_modules', './__tests__'],
-  "collectCoverage":true
+  collectCoverage: true,
+  transform: {
+    '^.+\\.tsx?$': ['ts-jest', { tsconfig: 'tsconfig.test.json' }],
+  },
 };

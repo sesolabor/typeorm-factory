@@ -2,8 +2,10 @@
   "compilerOptions": {
     "target": "es2017",
     "module": "commonjs",
-    "lib": ["es2017", "es7", "es6", "dom"],
+    "types": ["node"],
+    "lib": ["es2018", "dom"],
     "declaration": true,
+    "rootDir": "./src",
     "outDir": "./lib",
     "strict": true,
     "esModuleInterop": true,
